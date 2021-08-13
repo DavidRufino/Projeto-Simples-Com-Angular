@@ -1,0 +1,23 @@
+<app-nav-bar></app-nav-bar>
+
+<div class="container mt-4">
+
+    <!-- Lista os courses, criado na pasta 'courses' -->
+    <!-- com RouterModule configurado, nao precisa mais utilizar essa tag configurada-->
+    <!-- <app-course-list></app-course-list> -->
+    
+    <!-- Definindo o Switch do componente de rota para CourseListComponent -->
+    <!-- com isso deixaremos de trabalhar com TAG e estamos passando a trabalhar com rota -->
+    <router-outlet></router-outlet>
+
+    <!-- Mais Exemplos de angular -->
+    {{title}}
+
+    <br />
+
+    {{name}}
+
+    <br />
+
+    <input [(ngModel)]="name" name="name">
+</div>
